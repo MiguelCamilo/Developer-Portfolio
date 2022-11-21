@@ -27,6 +27,6 @@ export default [
     year: "2019",
     title: "Apple Technical Specialist",
     details:
-      "Help new owners get started and current ones get quick andefficient support. While developing strong, positive relationships with Apple. Quickly assessing and taking care of customers with advice or a solution on the spot, using knowledge of current Apple technology to help with iPod, iPhone, and iPad devices.",
+      "Help new owners get started and current ones get quick and efficient support. While developing strong, positive relationships with Apple. Quickly assessing and taking care of customers with advice or a solution on the spot, using knowledge of current Apple technology to help with iPod, iPhone, and iPad devices.",
   },
 ];
