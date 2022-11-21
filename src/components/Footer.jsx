@@ -22,13 +22,13 @@ function Footer() {
                 </g>
               </svg>
               {/* animate ping radius */}
-              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full  bg-sky-400 dark:bg-sky-200 animate-ping" />
+              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full  bg-red-600 dark:bg-red-500 animate-ping" />
               {/* animate ping */}
-              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full bg-sky-400 dark:bg-sky-200" />
+              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full bg-red-600 dark:bg-red-600" />
             </a>
             <a
               href="https://github.com/MiguelCamilo"
-              className="bg-zinc-900 hover:bg-zinc-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-lg drop-shadow-xl dark:bg-stone-500 dark:hover:bg-stone-400"
+              className="bg-zinc-900 hover:bg-zinc-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-lg drop-shadow-xl dark:bg-stone-500 dark:hover:bg-stone-400"
               target="_blank"
             >
               <svg

@@ -8,15 +8,15 @@ function Intro() {
         Miguel Camilo
       </h1>
       <p className="text-base md:text-xl mb-3 font-medium">
-        Full Stack Software Engineer
+        Software Engineer & Web Developer
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
         📍 I'm based in South Florida (West Palm Beach) <br /> ✉️ To contact me
         for business inquiries fill out the form below. <br /> 🧠 React.JS |
         JavaScript | Node.JS | Express.JS | Web Development Skills <br /> 👨🏻‍💻
-        Frameworks: Bootstrap | jQuery | React <br /> Technologies: ArcGIS | Git
-        | npm | yarn <br /> 🚀 Skills that I'm expanding on: React.JS || React
-        Native || MongoDB || SQL
+        Frameworks: React || TailWindCSS || Bootstrap <br /> Technologies:
+        ArcGIS | Git | npm | yarn <br /> 🚀 Skills that I'm expanding on:
+        React.JS || React Native || MongoDB || SQL
       </p>
     </div>
   );
