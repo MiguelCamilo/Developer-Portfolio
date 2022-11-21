@@ -24,7 +24,7 @@ function Footer() {
             </a>
             <a
               href="https://github.com/MiguelCamilo"
-              className="bg-zinc-900 hover:bg-zinc-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full drop-shadow-xl"
+              className="bg-zinc-900 hover:bg-zinc-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full drop-shadow-xl dark:bg-stone-500 dark:hover:bg-stone-400"
               target="_blank"
             >
               <svg

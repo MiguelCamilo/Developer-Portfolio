@@ -1,14 +1,13 @@
 import React from "react";
 
-function PortfolioItem({ title, imgUrl, stack, link }) {
+function PortfolioItem({ title, stack, link }) {
   return (
-    // project border
-    <div className="border-2 border-stone-900 dark:border-stone-300 rounded-md overflow-hidden">
-      <img
-        src={imgUrl}
-        alt="portfolio"
-        className="w-full h-36 md:h-48 object-cover cursor-pointer"
-      />
+    // wrapped an anchor tag so each {item} can get each link necessary
+    <a
+      href={link}
+      target="_blank"
+      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden hover:bg-stone-500"
+    >
       <div className="w-full p-4">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
           {title}
@@ -22,7 +21,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
           ))}
         </p>
       </div>
-    </div>
+    </a>
   );
 }
 

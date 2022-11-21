@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
@@ -63,16 +62,34 @@ function App() {
     </svg>
   );
 
+  // func to scroll to bottom when btn pressed
+  const scrollDown = () => {
+    window.scrollTo({
+      top: document.documentElement.offsetHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
+      {/* dark theme */}
       <button
         typeof="button"
         onClick={handleThemeSwitch}
         // adding a background color allows for button to change when clicked
-        className="fixed p-2 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md drop-shadow-xl"
+        className="absolute p-2 right-20 top-4 hover:bg-violet-200 bg-violet-300 hover:dark:bg-orange-200 dark:bg-orange-300 text-lg p-1 rounded-md drop-shadow-xl"
       >
         {/* if theme is dark set icon to sun, else set to moon */}
         {theme === "dark" ? sun : moon}
+      </button>
+      {/* contact form  */}
+      <button
+        type="button"
+        onClick={scrollDown}
+        className="absolute p-1.5 mr-10 mt-4 right-20 hover:bg-violet-200 bg-violet-300 hover:dark:bg-orange-200 dark:bg-orange-300 text-sm rounded-md dark:text-black drop-shadow-xl text-white "
+      >
+        Contact &darr;
       </button>
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 font-inter">
         <div className="max-w-5xl w-11/12 mx-auto">
