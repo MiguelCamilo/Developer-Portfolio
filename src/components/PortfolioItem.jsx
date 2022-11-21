@@ -6,7 +6,7 @@ function PortfolioItem({ title, stack, link }) {
     <a
       href={link}
       target="_blank"
-      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden hover:bg-stone-500"
+      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden hover:bg-stone-200 dark:hover:bg-stone-400"
     >
       <div className="w-full p-4">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">

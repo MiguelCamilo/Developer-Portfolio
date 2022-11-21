@@ -22,9 +22,9 @@ function Footer() {
                 </g>
               </svg>
               {/* animate ping radius */}
-              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full bg-sky-200 animate-ping" />
+              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full  bg-sky-400 dark:bg-sky-200 animate-ping" />
               {/* animate ping */}
-              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full bg-sky-200" />
+              <div className="absolute -top-1 -right-1 -mr-1 -mt-0 w-3 h-3 rounded-full bg-sky-400 dark:bg-sky-200" />
             </a>
             <a
               href="https://github.com/MiguelCamilo"
