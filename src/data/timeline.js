@@ -22,7 +22,7 @@ export default [
     year: "2020",
     title: "Start of my Coding Journey",
     details:
-      "During this time I focused on learning the basics of programming, with a Intro to Programming course at my communit college. After that I decided to accelerate my learning by taking courses on my own time out of school. I purchased a Full Stack Web Development course on Udemy, where I learned front-end development and advanced Javascript which allowed to work on the projects you see above.",
+      "During this time I focused on learning the basics of programming, with a Intro to Programming course at my community college. After that I decided to accelerate my learning by taking courses on my own time out of school. I purchased a Full Stack Web Development course on Udemy, where I learned front-end development and advanced Javascript which allowed to work on the projects you see above.",
   },
   {
     year: "2019",
