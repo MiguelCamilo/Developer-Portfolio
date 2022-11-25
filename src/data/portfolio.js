@@ -13,9 +13,14 @@ export default [
     link: "https://diceewebapp.netlify.app",
   },
   {
-    title: "Expense Report Web App",
-    imgUrl: "/assets/WrkInProg.jpg",
-    stack: ["React.JS", "Javascript", "CSS", "HTML"],
-    link: "https://github.com/MiguelCamilo/expense-report-webapp",
+    title: "Developer Portfolio (Github)",
+    stack: ["React.JS", "Javascript", "Tailwind", "Vite"],
+    link: "https://github.com/MiguelCamilo/Web-Portfolio",
   },
+  // {
+  //   title: "Expense Report Web App",
+  //   imgUrl: "/assets/WrkInProg.jpg",
+  //   stack: ["React.JS", "Javascript", "CSS", "HTML"],
+  //   link: "https://github.com/MiguelCamilo/expense-report-webapp",
+  // },
 ];
