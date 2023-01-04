@@ -21,8 +21,6 @@ function Modal() {
 		}
 	};
 
-	// TODO: create func that doesnt allow scrolling while modal open
-
 	return (
 		<>
 			<button
@@ -49,6 +47,7 @@ function Modal() {
 								<ModalItem
 									p1={item.p1}
 									p2={item.p2}
+									p3={item.p3}
 									p4={item.p4}
 									p5={item.p5}
 								/>

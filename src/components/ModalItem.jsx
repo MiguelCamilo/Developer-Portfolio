@@ -8,6 +8,8 @@ function ModalItem({ p1, p2, p3, p4, p5 }) {
             <br/>
 			<p className="text-black text-xs">{p2}</p>
             <br/>
+			<p className="text-black text-xs">{p3}</p>
+			<br />
 			<p className="text-black text-xs">{p4}</p>
             <br/>
 			<p className="text-black text-xs">{p5}</p>
