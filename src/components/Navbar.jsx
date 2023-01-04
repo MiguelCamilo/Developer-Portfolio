@@ -24,6 +24,15 @@ function Navbar() {
 		}
 	}, [theme]);
 
+	// func to scroll to bottom when btn pressed
+	const scrollDown = () => {
+		window.scrollTo({
+			top: document.documentElement.offsetHeight,
+			left: 0,
+			behavior: "smooth",
+		});
+	};
+
 	const sun = (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -57,15 +66,6 @@ function Navbar() {
 			/>
 		</svg>
 	);
-
-	// func to scroll to bottom when btn pressed
-	const scrollDown = () => {
-		window.scrollTo({
-			top: document.documentElement.offsetHeight,
-			left: 0,
-			behavior: "smooth",
-		});
-	};
 
 	return (
 		<>
