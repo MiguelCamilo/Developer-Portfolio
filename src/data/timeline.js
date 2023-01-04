@@ -16,7 +16,7 @@ export default [
 		title: "South Florida Tech Hub Hackathon",
     duration: "Palm Beach County 311 App",
 		details:
-			"During this hackathon project, I developed a citizen non-emergency reporting app using React Native, MongoDB, and Node.js. Utilized React Hooks to develop the logic for the frontend and used Fetch API's to connect the frontend to the backend. Implemented React Native dependencies for a user-friendly UI and UX. This project allowed me to expand my skills in full-stack development and work with a variety of technologies, including ArcGIS and Twilio.",
+			"During this hackathon project, I worked with a team of developers where we created a citizen non-emergency reporting app using React Native, MongoDB, and Node.js. Utilized React Hooks to develop the logic for the frontend and used Fetch API's to connect the frontend to the backend. Implemented React Native dependencies for a user-friendly UI and UX. This project allowed me to expand my skills in full-stack development and work with a variety of technologies, including ArcGIS and Twilio.",
 	},
 	{
 		year: "Present",
