@@ -1,22 +1,15 @@
 export default [
-	// {
-	//   year: "2023",
-	//   title: "Coding Boot Camp",
-	//   details: "",
-	//   // "After completing my AA in my hometown community college, I decided I wanted to accelerate my growth and build on my current coding skills. I joined a coding bootcamp where I invested 400 hours of work to learn new stacks and create full stack apps using React, TypeScript, NodeJS, Express, Git & Github, RestAPI's, Cloud Functions, NoSQL, Javascript, CSS, HTML.",
-	// },
+	{
+	  year: "2023",
+	  title: "Boca Code",
+	  duration: "Coding Bootcamp",
+	  details: "I joined a coding bootcamp to accelerate my growth and build on my current coding skills. Where I invested 400 hours of work to learn new stacks and create full stack apps using React, TypeScript, NodeJS, Express, Git & Github, RestAPI's, Cloud Functions, NoSQL, Javascript, CSS, HTML."
+	},
 	{
 		year: "2022",
 		title: "Software Engineer Intern",
 		duration: "6 months",
 		details: `Developing a responsive Web App across multiple platforms. Also worked with a team of developers to resolve front-end tickets. Technology: Web Applications | Front-End Development | Tailwind CSS | JavaScript | React.js | ArcGIS`,
-	},
-	{
-		year: "2022",
-		title: "South Florida Tech Hub Hackathon",
-    duration: "Palm Beach County 311 App",
-		details:
-			"During this hackathon project, I worked with a team of developers where we created a citizen non-emergency reporting app using React Native, MongoDB, and Node.js. Utilized React Hooks to develop the logic for the frontend and used Fetch API's to connect the frontend to the backend. Implemented React Native dependencies for a user-friendly UI and UX. This project allowed me to expand my skills in full-stack development and work with a variety of technologies, including ArcGIS and Twilio.",
 	},
 	{
 		year: "Present",
