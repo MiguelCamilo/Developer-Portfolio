@@ -1,9 +1,8 @@
 export default [
 	{
 	  year: "2023",
-	  title: "Boca Code",
-	  duration: "Coding Bootcamp",
-	  details: "I joined a coding bootcamp to accelerate my growth and build on my current coding skills. Where I invested 400 hours of work to learn new stacks and create full stack apps using React, TypeScript, NodeJS, Express, Git & Github, RestAPI's, Cloud Functions, NoSQL, Javascript, CSS, HTML."
+	  title: "Full stack Software Engineering Boot Camp",
+	  details: "I joined a Full Stack Coding Boot Camp to accelerate my growth and build on my current coding skills. I invested 400 hours of work to learn new stacks and create full stack Web Apps and Mobile Apps using React | TypeScript | NodeJS | Express | Git & Github | RestAPI's | Cloud Functions | NoSQL | Javascript | CSS | HTML"
 	},
 	{
 		year: "2022",
