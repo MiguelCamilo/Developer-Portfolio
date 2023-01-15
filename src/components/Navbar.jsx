@@ -4,6 +4,7 @@ import Modal from "./Modal";
 function Navbar() {
 	const [theme, setTheme] = useState(null);
 
+	// checks browser setting to see if in dark or light mode
 	useEffect(() => {
 		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 			setTheme("dark");
@@ -12,10 +13,12 @@ function Navbar() {
 		}
 	}, []);
 
+	// func for onClick event 
 	const handleThemeSwitch = () => {
 		setTheme(theme === "dark" ? "light" : "dark");
 	};
 
+	// adds or removes 'dark' class to body
 	useEffect(() => {
 		if (theme === "dark") {
 			document.documentElement.classList.add("dark");
