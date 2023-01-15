@@ -1,8 +1,9 @@
 export default [
 	{
-	  year: "2023",
-	  title: "Full stack Software Engineering Boot Camp",
-	  details: "I joined a Full Stack Coding Boot Camp to accelerate my growth and build on my current coding skills. I invested 400 hours of work to learn new stacks and create full stack Web Apps and Mobile Apps using React | TypeScript | NodeJS | Express | Git & Github | RestAPI's | Cloud Functions | NoSQL | Javascript | CSS | HTML"
+		year: "2023",
+		title: "Full stack Software Engineering Boot Camp",
+		details:
+			"I enrolled in a Full Stack Coding Bootcamp to improve my abilities and expand on my existing coding knowledge. Additionally, I collaborated with a team of developers to work on real-world projects. This boot-camp was intensive but I dedicated 400 hours to studying new technologies and developing full stack web and mobile applications using React | TypeScript | NodeJS | Express | Git and Github |  RestAPI's | Cloud Functions | NoSQL | Javascript | CSS | and HTML",
 	},
 	{
 		year: "2022",
