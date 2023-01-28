@@ -3,7 +3,7 @@ export default [
   {
     title: "TodoList React Native Mobile App (Github)",
     stack: ["React Native", "React", "Expo"],
-    link: "https://diceewebapp.netlify.app",
+    link: "https://github.com/MiguelCamilo/TodoList-ReactNative-Expo",
   },
   {
     title: "Developer Portfolio (Github)",
