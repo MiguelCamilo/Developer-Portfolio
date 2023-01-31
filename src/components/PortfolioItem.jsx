@@ -13,9 +13,9 @@ function PortfolioItem({ title, stack, link }) {
           {title}
         </h3>
         <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm">
-          {stack.map((item) => (
+          {stack.map((item, index) => (
             // portolio children border
-            <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md dark:text-white">
+            <span key={item.id || index} className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md dark:text-white">
               {item}
             </span>
           ))}
