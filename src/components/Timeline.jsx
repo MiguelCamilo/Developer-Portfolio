@@ -9,8 +9,9 @@ function Timeline() {
       <div className="w-full md:w-7/12">
         <Title>Timeline</Title>
         {/* creates a an array of from data passed in from timeline database */}
-        {timeline.map((item) => (
+        {timeline.map((item, index) => (
           <TimelineItem
+            key={item.id || index}
             year={item.year}
             title={item.title}
             duration={item.duration}
