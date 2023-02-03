@@ -8,7 +8,7 @@ function Intro() {
         Miguel Camilo
       </h1>
       <p className="text-base md:text-xl mb-3 font-medium">
-        Software Engineer & Web Developer
+        Full Stack Software Engineer & Web Developer
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
         📍 I'm based in South Florida <br /> ✉️ To contact me for business
