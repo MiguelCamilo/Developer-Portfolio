@@ -36,5 +36,5 @@ Also with [GetForm.io](https://getform.io) implemented a quick and easy contact 
 
 ## Contact
 
-- Website [miguelcamiloportfolio.netlify.app](https://miguelcamiloportfolio.netlify.app)
+- Website [miguelcamiloportfolio.netlify.app](https://miguelcamilo.dev)
 - GitHub [@MiguelCamilo](https://github.com/MiguelCamilo)
