@@ -13,9 +13,9 @@ function Modal() {
 	const toggleModalOpen = () => {
 		setModal(true);
 
-		// ! this checks if the user is browsing on a web browser
-		// ! if true then it sets body overflow to hidden
-		// ! which removes the scroll bar
+		//  this checks if the user is browsing on a web browser
+		//  if true then it sets body overflow to hidden
+		//  which removes the scroll bar
 		if (typeof window != "undefined" && window.document) {
 			document.body.style.overflow = "hidden";
 		}
@@ -37,14 +37,15 @@ function Modal() {
 			{Modal && (
 				<div className="w-screen h-screen top-0 left-0 right-0 bottom-0 fixed">
 					{/* modal background */}
-					<div className="bg-zinc-800 dark:bg-zinc-200 bg-opacity-95 dark:bg-opacity-25 w-screen h-screen top-0 left-0 right-0 bottom-0 fixed" />
+					<div className="bg-zinc-800 dark:bg-[black] bg-opacity-95 dark:bg-opacity-25 w-screen h-screen top-0 left-0 right-0 bottom-0 fixed" />
 					{/* modal card */}
-					<div className="absolute mt-14 md:-mt-5 top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 leading-normal bg-zinc-100 p-8 rounded-xl max-w-[300px] min-w-[300px] md:max-w-none md:min-w-none ">
+					<div className=" absolute mt-14 md:-mt-5 top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 leading-normal bg-[#ebebeb] p-8 rounded-xl max-w-[300px] min-w-[300px] md:max-w-none md:min-w-none ">
 						<h2 className="font-bold text-black text-center mb-2">Hello 👋🏼</h2>
 						<div>
 							{/* pulling in data from modal.js data base*/}
 							{modal.map((item) => (
 								<ModalItem
+									key={item.id}
 									p1={item.p1}
 									p2={item.p2}
 									p3={item.p3}
