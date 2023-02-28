@@ -2,16 +2,16 @@ export default [
 	{
 		id: '1',
 		year: "2023",
-		title: "Full stack Software Engineering Boot Camp",
+		title: "Full Stack Software Engineering Boot Camp",
 		details:
 			"I enrolled in a Full Stack Coding Bootcamp to improve my abilities and expand on my existing coding knowledge. Additionally, I collaborated with a team of developers to work on real-world projects. This boot-camp was intensive but I dedicated 400 hours to studying new technologies and developing full stack web and mobile applications using React | TypeScript | NodeJS | Express | Git and Github |  RestAPI's | Cloud Functions | NoSQL | Javascript | CSS | and HTML",
 	},
 	{
 		id: '2',
 		year: "2022",
-		title: "Software Engineer Intern",
+		title: "Front End Software Engineer",
 		duration: "6 months",
-		details: `Developing a responsive Web App across multiple platforms. Also worked with a team of developers to resolve front-end tickets. Technology: Web Applications | Front-End Development | Tailwind CSS | JavaScript | React.js | ArcGIS`,
+		details: `Developing a responsive Web App across multiple platforms. Also worked with a team of developers to resolve front-end tickets. Technology: React | AWS | MongDB | JavaScript | Tailwind CSS | ArcGIS`,
 	},
 	{
 		id: '3',
