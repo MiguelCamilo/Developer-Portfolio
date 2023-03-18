@@ -24,7 +24,7 @@ function PortfolioItem({ title, stack, link }) {
 			whileHover={{ scale: 1.2 }}
 			whileTap={{ scale: 0.8 }}
 		>
-			<motion.a href={link}>
+			<motion.a href={link} target="_blank">
 				<div className="w-full p-4">
 					<h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
 						{title}

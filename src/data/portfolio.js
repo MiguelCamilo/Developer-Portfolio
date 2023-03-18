@@ -2,15 +2,15 @@
 export default [
   {
     id: 1,
-    title: "Full Stack TodoList Mobile App (Github)",
-    stack: ["React Native", "React", "Expo", "Google Cloud"],
-    link: "https://github.com/MiguelCamilo/Todo-List-ReactNative-App",
+    title: "Full Stack Budget Buddy",
+    stack: ["React", "Node JS", "Express JS", "Google Cloud", "MongoDB"],
+    link: "https://budget-buddy-app.web.app",
   },
   {
     id: 2,
-    title: "Developer Portfolio (Github)",
-    stack: ["React", "Javascript", "Tailwind CSS", "Vite"],
-    link: "https://github.com/MiguelCamilo/Web-Portfolio",
+    title: "Full Stack TodoList Mobile App (Github)",
+    stack: ["React Native", "React", "Expo", "Google Cloud"],
+    link: "https://github.com/MiguelCamilo/Todo-List-ReactNative-App",
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ export default [
   },
   {
     id: 6,
-    title: "Museum of Candy Website",
-    stack: ["Javascript", "CSS3", "HTML5", "Netlify Hosting"],
-    link: "https://museum-of-candy-inc.netlify.app/#",
+    title: "Developer Portfolio (Github)",
+    stack: ["React", "Javascript", "Tailwind CSS", "Vite"],
+    link: "https://github.com/MiguelCamilo/Web-Portfolio",
   },
 ];
