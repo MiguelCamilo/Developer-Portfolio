@@ -1,83 +1,79 @@
-import React, { useState } from "react";
+import { useState, Fragment } from "react";
+
+import { Dialog, Transition } from "@headlessui/react";
+
 import ModalItem from "./ModalItem";
 import modal from "../data/modal";
 
 function Modal() {
-	const [Modal, setModal] = useState(false);
-
-	const toggleModalClose = () => {
-		setModal(false);
-		document.body.style.overflow = "unset";
-	};
-
-	const toggleModalOpen = () => {
-		setModal(true);
-
-		//  this checks if the user is browsing on a web browser
-		//  if true then it sets body overflow to hidden
-		//  which removes the scroll bar
-		if (typeof window != "undefined" && window.document) {
-			document.body.style.overflow = "hidden";
-		}
-	};
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<>
-			<button
-				className="absolute right-[170px] top-4 px-1 py-1 bg-violet-300 dark:bg-orange-300 dark:text-black hover:dark:bg-orange-200 hover:bg-violet-200 text-white rounded-md drop-shadow-xl"
-				onClick={toggleModalOpen}
-			>
-				About
-				{/* animate ping radius */}
-				<div className="absolute right-2 w-3 h-3 -mr-3 -mt-8 rounded-full  bg-red-600 dark:bg-red-500 animate-ping" />
-				{/* animate ping */}
-				<div className="absolute right-2 h-3 w-3 -mr-3 -mt-8 bg-red-600 dark:bg-red-600 rounded-full" />
-			</button>
+			<div className="absolute right-[170px] top-4 px-1 py-1 bg-violet-300 dark:bg-orange-300 dark:text-black hover:dark:bg-orange-200 hover:bg-violet-200 text-white rounded-md drop-shadow-xl">
+				<button
+					type="button"
+					onClick={() => setIsOpen(true)}
+					// className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+				>
+					About
+				</button>
+			</div>
 
-			{Modal && (
-				<div className="w-screen h-screen top-0 left-0 right-0 bottom-0 fixed">
-					{/* modal background */}
-					<div className="bg-zinc-800 dark:bg-[black] bg-opacity-95 dark:bg-opacity-25 w-screen h-screen top-0 left-0 right-0 bottom-0 fixed" />
-					{/* modal card */}
-					<div className=" absolute mt-14 md:-mt-5 top-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 leading-normal bg-[#ebebeb] p-8 rounded-xl max-w-[300px] min-w-[300px] md:max-w-none md:min-w-none ">
-						<h2 className="font-bold text-black text-center mb-2">Hello 👋🏼</h2>
-						<div>
-							{/* pulling in data from modal.js data base*/}
-							{modal.map((item) => (
-								<ModalItem
-									key={item.id}
-									p1={item.p1}
-									p2={item.p2}
-									p3={item.p3}
-									p4={item.p4}
-									p5={item.p5}
-								/>
-							))}
-						</div>
+			<Transition appear show={isOpen} as={Fragment}>
+				<Dialog as="div" className="relative z-10" onClose={() => setIsOpen(false)}>
+					<Transition.Child
+						as={Fragment}
+						enter="ease-out duration-300"
+						enterFrom="opacity-0"
+						enterTo="opacity-100"
+						leave="ease-in duration-200"
+						leaveFrom="opacity-100"
+						leaveTo="opacity-0"
+					>
+						<div className="fixed inset-0 bg-black bg-opacity-25" />
+					</Transition.Child>
 
-						<button
-							onClick={toggleModalClose}
-							className="absolute top-[10px] right-[10px] p-2"
-						>
-							{/* X svg */}
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								strokeWidth="1.5"
-								stroke="currentColor"
-								className="w-6 h-6 text-black"
+					<div className="fixed inset-0 overflow-y-auto">
+						<div className="flex min-h-full items-center justify-center p-4 text-center">
+							<Transition.Child
+								as={Fragment}
+								enter="ease-out duration-300"
+								enterFrom="opacity-0 scale-95"
+								enterTo="opacity-100 scale-100"
+								leave="ease-in duration-200"
+								leaveFrom="opacity-100 scale-100"
+								leaveTo="opacity-0 scale-95"
 							>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
-						</button>
+								<Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+									<Dialog.Title
+										as="h3"
+										className="text-lg font-medium leading-6 text-gray-900"
+									>
+										Payment successful
+									</Dialog.Title>
+									<div className="mt-2">
+										<p className="text-sm text-gray-500">
+											Your payment has been successfully submitted. We’ve sent
+											you an email with all of the details of your order.
+										</p>
+									</div>
+
+									<div className="mt-4">
+										<button
+											type="button"
+											className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+											onClick={() => setIsOpen(false)}
+										>
+											Got it, thanks!
+										</button>
+									</div>
+								</Dialog.Panel>
+							</Transition.Child>
+						</div>
 					</div>
-				</div>
-			)}
+				</Dialog>
+			</Transition>
 		</>
 	);
 }
