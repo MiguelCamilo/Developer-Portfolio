@@ -17,11 +17,19 @@ function Modal() {
 					// className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
 				>
 					About
+					{/* animate ping radius */}
+					<div className="absolute right-2 w-3 h-3 -mr-3 -mt-8 rounded-full  bg-red-600 dark:bg-red-500 animate-ping" />
+					{/* animate ping */}
+					<div className="absolute right-2 h-3 w-3 -mr-3 -mt-8 bg-red-600 dark:bg-red-600 rounded-full" />
 				</button>
 			</div>
 
 			<Transition appear show={isOpen} as={Fragment}>
-				<Dialog as="div" className="relative z-10" onClose={() => setIsOpen(false)}>
+				<Dialog
+					as="div"
+					className="relative z-10"
+					onClose={() => setIsOpen(false)}
+				>
 					<Transition.Child
 						as={Fragment}
 						enter="ease-out duration-300"
@@ -31,7 +39,7 @@ function Modal() {
 						leaveFrom="opacity-100"
 						leaveTo="opacity-0"
 					>
-						<div className="fixed inset-0 bg-black bg-opacity-25" />
+						<div className="fixed inset-0 bg-black bg-opacity-70" />
 					</Transition.Child>
 
 					<div className="fixed inset-0 overflow-y-auto">
@@ -45,28 +53,33 @@ function Modal() {
 								leaveFrom="opacity-100 scale-100"
 								leaveTo="opacity-0 scale-95"
 							>
-								<Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-									<Dialog.Title
-										as="h3"
-										className="text-lg font-medium leading-6 text-gray-900"
-									>
-										Payment successful
-									</Dialog.Title>
-									<div className="mt-2">
-										<p className="text-sm text-gray-500">
-											Your payment has been successfully submitted. We’ve sent
-											you an email with all of the details of your order.
-										</p>
-									</div>
-
-									<div className="mt-4">
+								<Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white px-8 py-4 text-left align-middle shadow-xl transition-all">
+									<div className="flex justify-end">
 										<button
 											type="button"
-											className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+											className=""
 											onClick={() => setIsOpen(false)}
 										>
-											Got it, thanks!
+											X
 										</button>
+									</div>
+									<Dialog.Title
+										as="h3"
+										className="text-lg text-center font-medium leading-6 text-gray-900"
+									>
+										Hello 👋🏼
+									</Dialog.Title>
+									<div className="mt-2">
+										{modal.map((item) => (
+											<ModalItem
+												key={item.id}
+												p1={item.p1}
+												p2={item.p2}
+												p3={item.p3}
+												p4={item.p4}
+												p5={item.p5}
+											/>
+										))}
 									</div>
 								</Dialog.Panel>
 							</Transition.Child>
