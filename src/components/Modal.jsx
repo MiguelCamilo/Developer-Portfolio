@@ -1,11 +1,12 @@
-import { useState, Fragment } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import { useState, Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 
-import ModalItem from './ModalItem';
-import modal from '../data/modal';
+import ModalItem from "./ModalItem";
+import modal from "../data/modal";
 
-import { ReactComponent as LinkedInLogo } from '../assets/linkedin.svg';
-import { ReactComponent as GithubLogo } from '../assets/github.svg';
+import { AiFillLinkedin } from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai";
 
 function Modal() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +63,7 @@ function Modal() {
 											className=""
 											onClick={() => setIsOpen(false)}
 										>
-											X
+											<AiOutlineClose />
 										</button>
 									</div>
 									<Dialog.Title
@@ -86,11 +87,11 @@ function Modal() {
 										<div className="container max-w-screen-lg mx-auto">
 											<div className="flex flex-wrap justify-center gap-2">
 												<a
-													href="https://www.linkedin.com/in/miguel-camilo/"
+													// href="https://www.linkedin.com/in/miguel-camilo/"
 													className="bg-sky-600 hover:bg-sky-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-lg drop-shadow-xl"
-													target="_blank"
+													// target="_blank"
 												>
-													<LinkedInLogo />
+													<AiFillLinkedin style={{ height: "1.5rem", width: "1.5rem" }} />													
 												</a>
 												{/* animate ping radius */}
 												<div className="absolute flex w-3 h-3 mr-3 -mt-1 rounded-full  bg-red-600 dark:bg-red-500 animate-ping" />
@@ -101,7 +102,7 @@ function Modal() {
 													className="bg-zinc-900 hover:bg-zinc-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-lg drop-shadow-xl"
 													target="_blank"
 												>
-													<GithubLogo />
+													<AiFillGithub style={{ height: "1.5rem", width: "1.5rem" }} />
 												</a>
 											</div>
 										</div>

@@ -15,7 +15,7 @@ export default [
   {
     id: 3,
     title: "REST API | TypeScript (Github)",
-    stack: ["Node JS", "Express JS", "TypeScript", "MongoDB"],
+    stack: ["API", "Node JS", "Express JS", "TypeScript", "MongoDB"],
     link: "https://github.com/MiguelCamilo/REST-API-TypeScript",
   },
 
