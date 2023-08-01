@@ -1,7 +1,7 @@
 export default [
 	{
 		id: '1',
-		p1: "As a software engineer with experience in both front-end and back-end technologies, I am constantly seeking opportunities to expand my technical skills and knowledge.",
+		p1: "I am a highly skilled Full Stack Software Engineer and Web Developer based in Palm Beach, FL. With a strong passion for building innovative applications, I have extensive experience in both front-end and back-end development. I am dedicated to delivering high-quality solutions that meet user needs and drive business success.",
 
 		p2: "In my previous journey with Emergency App, I improved the web app's responsiveness using responsive utility variants and built adaptive user interfaces for multiple platforms.",
 
