@@ -16,7 +16,7 @@
 ## Overview
 
 - Where can I see your demo?
-  - https://miguelcamiloportfolio.netlify.app
+  - [LIVE DEMO](https://miguelcamilo.dev)
 - What have you learned/improved?
   - Working on this project helped me develop my skills with ReactJS and get a better understanding of TailWindCSS
 
