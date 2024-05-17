@@ -60,7 +60,6 @@ function PortfolioItem({ title, stack, link, description }) {
                     as="h3"
                     className="text-lg md:text-xl mb-2 md:mb-3 font-semibold"
                   >
-                    
 						{title}
                   </Dialog.Title>
 				  
