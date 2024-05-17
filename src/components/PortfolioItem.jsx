@@ -70,7 +70,7 @@ function PortfolioItem({ title, stack, link, description }) {
 				  <span className="relative inline-block px-2 py-2 font-medium group mb-2">
 					<span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-orange-300 group-hover:-translate-x-0 group-hover:-translate-y-0" />
 					<span className="absolute inset-0 w-full h-full bg-white border-2 border-orange-300 group-hover:bg-orange-300" />
-					<a href={link} className="relative text-orange-300 group-hover:text-white font-semibold">Demo/Code</a>
+					<a href={link} target="_blank" className="relative text-orange-300 group-hover:text-white font-semibold">Demo/Code</a>
 				</span>
 				 
 				  <h1 className='font-bold'>Tech Stack: </h1>
