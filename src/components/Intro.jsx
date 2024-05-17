@@ -13,7 +13,7 @@ function Intro() {
       <p className="text-sm max-w-xl mb-6 font-bold">
         📍 I'm based in South Florida <br /> ✉️ To contact me for business
         inquiries fill out the form below. <br /> 👨🏻‍💻 Frameworks:
-        React || TailWindCSS || Bootstrap <br /> 💻 Technologies: MySQL | Firebase | MongoDB | Google Cloud Platform | ArcGIS | Git |
+        React || TailWindCSS || Bootstrap <br /> 💻 Technologies: MySQL | MongoDB | Google Cloud Platform | ArcGIS | Git |
         npm | yarn <br /> 🚀 Skills:  React || Typescript || NodeJS || ExpressJS ||  || React Native || Javascript ||  || MongoDB || SQL
       </p>
     </div>
